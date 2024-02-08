@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+{% block content %}
+
+    <div class="container">
+        <h3 style="text-decoration: none;"><a href="{% url 'storyform' %}">Create a Story</a></h3>
+        <div class="row" style="padding-top: 2em;">
+    {% for data in story %}
+    <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"><a href="{% url 'story' data.id %}">{{data.title}}</a></h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary"><a href="{% url 'userstory'  data.user.id %}">@{{data.user}}</a></h6>
+          <span style="font-size: small;">{{data.createdAt|timesince}} ago</span>
+          <p class="card-text">{{data.content}}</p>
+          {% if data.user.id == user.id %}
+          <a href="{% url 'deletestory' data.id %}" class="card-link">Delete</a>
+          <a href="{% url 'updatestory' data.id %}" class="card-link">Update</a>
+          {% else %}
+          <a href="{% url 'story' data.id %}" class="card-link">Visit</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+      {% endfor %}
+    </div>
+    </div>
+    {% endblock %}

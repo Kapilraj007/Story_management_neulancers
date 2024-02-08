@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>User_story: {{user.username}}</h1>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">title</th>
+          
+          </tr>
+        </thead>
+        <tbody>
+          {% for data in form %}
+            <tr>
+            <td>{{data.id}}</td>
+            <td><a href="{% url 'story' data.id %}">{{data.title}}</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    
+{%endblock%}

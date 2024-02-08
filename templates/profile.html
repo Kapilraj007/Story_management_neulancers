@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="container">
+    {% if page == 'update'%}
+
+    <form action="" method="POST">
+        {% csrf_token %}
+       {{form}}
+        <input type="submit" value="Update"/>
+    </form>
+    {% else %}
+    <h1>Profile</h1>
+    <p>Username : {{form.username}}</p>
+    <p>Email : {{form.email}}</p>
+    <a href="{%url 'updateprofile' request.user.id %}">UpdateProfile</a>
+    {%endif%}
+</div>
+
+{%endblock%}
