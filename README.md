@@ -1,5 +1,3 @@
-# Story_management_neulancers
- 
 ==>>>>>You wanna to initilaize code in your system, you may follow this steps for WINDOWS
 =>Open CMD
   ->To Check git version using (git -V)
