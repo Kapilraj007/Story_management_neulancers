@@ -8,14 +8,16 @@ To initalize the project in your system ,must follow the below commands
 
 -> third, Install git in your system -> For, linux sudo apt install git 
 
--> Fourth, Import the code from git, using this cmd -> git clone https://github.com/Kapilraj007/curdoperation_flask.git
+-> Fourth, Import the code from git, using this cmd -> git clone https://github.com/Kapilraj007/Story_management_neulancers.git
 
 -> Fivth, create virtual environment,-> pip install pipenv and for activating virtual environment , -> pipenv shell
 
--> sixth,  Install all requirements files, using -> pip install -r requirements.txt
+-> Sixth , Install djagno -> pip install django
 
--> Seventh, connect your database ->python3 manage.py makemigrations  ->python3 manage.py migrate
+-> Seventh,  Install all requirements files, using -> pip install -r requirements.txt
 
--> Eigth , create a super user -> python3 manage.py createsuperuser
+-> Eigth, connect your database ->python3 manage.py makemigrations  ->python3 manage.py migrate
+
+-> Nineth , create a super user -> python3 manage.py createsuperuser
 
 -> Finnaly , run the server using, -> python3 manage.py runserver
