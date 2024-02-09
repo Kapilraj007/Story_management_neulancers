@@ -1,63 +1,21 @@
-==>>>>>You wanna to initilaize code in your system, you may follow this steps for WINDOWS.
-=>Open CMD.
-  ->To Check git version using (git -V)
-=>Clone the project in your system .
-  ->git clone gh repo clone Kapilraj007/Story_management_neulancers
-=>After Cloning, install python, pip in your system.
-  ->python3 install pip
-=>Next locate the project file.
-  ->cd dir of your project
-=>Install django on your system.
-  ->pip install django
-=>To check version of django.
-  -> django-admin -version
-=>After initalize, To install all the requirements file using this command.
-  -> pip install -r requirements.txt
-=> To connect the database.
-  -> python manage.py makemigration
-  -> python manage.py migrate
-=> create a superuser for admin purpose.
-  -> python manage.py createsuperuser
-=> All done, to run the sever.
-  -> python manage.py runserver
+# Story_management_neulancers
+ 
+To initalize the project in your system ,must follow the below commands
 
+-> First, TO verify Python is installed in your computer, open cmd to check python -V or python3 -v
 
+-> Second, To instal pip , using this cmd -> python install pip or python3 install pip
 
+-> third, Install git in your system -> For, linux sudo apt install git 
 
+-> Fourth, Import the code from git, using this cmd -> git clone https://github.com/Kapilraj007/curdoperation_flask.git
 
+-> Fivth, create virtual environment,-> pip install pipenv and for activating virtual environment , -> pipenv shell
 
+-> sixth,  Install all requirements files, using -> pip install -r requirements.txt
 
-  
-==>>>>>You wanna to initilaize code in your system, you may follow this steps for LINUX
+-> Seventh, connect your database ->python3 manage.py makemigrations  ->python3 manage.py migrate
 
-=>Open terminal, update the system.
-  -> sudo apt update
-=>Install git.
-  -> sudo apt install git
-=> Install pip.
-  -> sudo apt install python3
-  -> sudo apt install python3-pip
-=> Check pip version.
-  -> pip -V or pip3 -V
-=>Clone the project in your system .
-  -> git clone gh repo clone Kapilraj007/Story_management_neulancers
-=>Next locate the project file.
-  -> cd dir of your project
-=>Install django on your system.
-  -> pip install django
-=>To check version of django.
-  -> django-admin -version
-=>After initalize, To install all the requirements file using this command.
-  -> pip install -r requirements.txt
-=> To connect the database.
-  -> python3 manage.py makemigration
-  -> python3 manage.py migrate
-=> create a superuser for admin purpose.
-  -> python3 manage.py createsuperuser
-=> All done, to run the sever.
-  -> python3 manage.py runserver
+-> Eigth , create a super user -> python3 manage.py createsuperuser
 
-
-
-
-  
+-> Finnaly , run the server using, -> python3 manage.py runserver
